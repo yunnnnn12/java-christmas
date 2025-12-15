@@ -41,14 +41,15 @@
 ## 1. model
 1) 주문 관련
 - 주문 메뉴(Order) : 이름, 개수, 가격 -> 총 금액 산출
-- 주문 메뉴들(Orders) : Order -> 총 주문 금액 산출)
+- 주문 메뉴들(Orders) : Order -> 할인 전 총 주문 금액 산출
 
 2) 혜택 관련
-- 혜택 관리(ManageBenefits) : 평일/주말 할인, 특별할인, 크리스마스 할인 + 총 혜택 금액, 할인 후 예상 결제 금액 
-- 평일 할인(WeekdayDiscount)
-- 주말 할인(WeekendDiscount)
-- 특별 할인(SpecialDiscount)
+- 혜택 관리 (ManageBenefits) : 평일/주말 할인, 특별할인, 크리스마스 할인 + 총 혜택 금액, 할인 후 예상 결제 금액 
+- 평일 할인 (WeekdayDiscount)
+- 주말 할인 (WeekendDiscount)
+- 특별 할인 (SpecialDiscount)
 - 크리스마스 할인(ChristmasDiscount)
+- 할인 들을 한번에 관리 할 모델 (ManageBenefits)
 - 배지(Badge)
 - 증정(GiftEvent)
 
@@ -65,10 +66,11 @@
 - 할인 후 예상 결제 금액
 - 12월 이벤트 배지
 
-3. service
-- 할인 전 총 주문금액 계산
+## 3. service (CheckBenefitService)
 - 평일/주말 할인 계산
 - 특별 할인 계산
 - 크리스마스 디데이할인 계산
 - 증정물건 계산
+- 배지 계산
+
 
