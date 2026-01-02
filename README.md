@@ -40,8 +40,7 @@
 # 4. mvc패턴으로 나누기
 ## 1. model
 1) 주문 관련
-- 주문 메뉴(Order) : 이름, 개수, 가격 -> 총 금액 산출
-- 주문 메뉴들(Orders) : Order -> 할인 전 총 주문 금액 산출
+- 주문 메뉴(Order) : 이름, 개수, 가격 -> 할인 전 총 금액 산출
 
 2) 혜택 관련
 - 혜택 관리 (ManageBenefits) : 평일/주말 할인, 특별할인, 크리스마스 할인 + 총 혜택 금액, 할인 후 예상 결제 금액 
@@ -66,11 +65,25 @@
 - 할인 후 예상 결제 금액
 - 12월 이벤트 배지
 
-## 3. service (CheckBenefitService)
+## 3. service
+### 1) CheckBenefitService
 - 평일/주말 할인 계산
 - 특별 할인 계산
 - 크리스마스 디데이할인 계산
 - 증정물건 계산
 - 배지 계산
+
+### 2) makeNewOrder
+- 한 주문 만들기(set만 하기)
+- 날짜 set 하기
+
+### 3) makeMenuAndQuantity
+- 메뉴이름, 수량 동시에 만들기
+
+### 4) makePrice
+- 가격 만들기
+
+### 5) makeType
+- 메뉴 타입 만들기
 
 
