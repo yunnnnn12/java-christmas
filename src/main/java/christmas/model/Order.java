@@ -11,56 +11,54 @@ public class Order {
     private int date;
     private int totalPrice = 0;
 
+    public Order() {
+    }
+
     public int getDate() {
         return date;
     }
-
     public void setDate(int date) {
         this.date = date;
     }
 
 
-    public Order() {
-    }
-
     public List<String> getType() {
         return type;
     }
-
     public void setType(List<String> types) {
         this.type = types;
     }
 
+
     public List<Integer> getPrice() {
         return price;
     }
-
     public void setPrice(List<Integer> prices) {
         this.price = prices;
     }
 
+
     public int getTotalPrice() {
         return this.totalPrice;
     }
-
     public void setTotalPrice(Order order) {
         for(int i = 0; i < order.getName().size(); i++){
             order.totalPrice += order.getPrice().get(i) * Integer.parseInt(order.getQuantity().get(i));
         }
     }
 
+
     public List<String> getName() {
         return name;
     }
-
     public void setName(List<String> names) {
         this.name = names;
     }
 
+
     public List<String> getQuantity() {
         return quantity;
     }
-
     public void setQuantity(List<String> quantities) {
         this.quantity = quantities;
     }
