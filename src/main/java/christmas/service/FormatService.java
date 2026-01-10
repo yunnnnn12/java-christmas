@@ -20,8 +20,6 @@ public class FormatService {
         nameAndQuantity.add(names);
         nameAndQuantity.add(quantities);
 
-
         return nameAndQuantity;
     }
-
 }
