@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MakeNewOrder {
-    //날짜 세팅
     public Order makeNewOrder(int date, String inputs){
         Order newOrder = new Order();
         ArrayList<List> menuList = makeMenuAndQuantity(inputs);
