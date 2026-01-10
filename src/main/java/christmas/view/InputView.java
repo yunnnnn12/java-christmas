@@ -34,5 +34,4 @@ public class InputView {
         }
         return menuAndQuantity;
     }
-
 }
