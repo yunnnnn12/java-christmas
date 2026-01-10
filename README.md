@@ -37,25 +37,18 @@
 ## 4. 산출
 - 증정물건 산출
 
-# 4. mvc패턴으로 나누기
+# 4. mvc
 ## 1. model
 1) 주문 관련
-- 주문 메뉴(Order) : 이름, 개수, 가격 -> 할인 전 총 금액 산출
+- 주문 메뉴(Order) : 이름, 개수, 가격, 음식 타입, 날짜, 할인 전 총 금액 산출
 
 2) 혜택 관련
-- 혜택 관리 (ManageBenefits) : 평일/주말 할인, 특별할인, 크리스마스 할인 + 총 혜택 금액, 할인 후 예상 결제 금액 
-- 평일 할인 (WeekdayDiscount)
-- 주말 할인 (WeekendDiscount)
-- 특별 할인 (SpecialDiscount)
-- 크리스마스 할인(ChristmasDiscount)
-- 할인 들을 한번에 관리 할 모델 (ManageBenefits)
-- 배지(Badge)
-- 증정(GiftEvent)
+- 할인들 한번에 관리(ManageBenefits) : 평일/주말 할인, 특별할인, 크리스마스 할인, 총 혜택 금액, 할인 후 예상 결제 금액
 
 ## 2. view
 1) InputView
 - 방문 날짜 입력받기
-- 주문 메뉴 이름과 개수
+- 주문 메뉴 이름과 개수 입력받기
 
 2) OutputView
 - 주문 메뉴
