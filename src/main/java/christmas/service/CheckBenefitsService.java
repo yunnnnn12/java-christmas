@@ -5,12 +5,10 @@ import christmas.model.ManageBenefits;
 import christmas.model.Order;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 
 public class CheckBenefitsService {
     public ManageBenefits setBenefits(Order order){
         ManageBenefits manageBenefits = new ManageBenefits();
-        ArrayList<Integer> benefits = new ArrayList<>();
 
         if(order.getTotalPrice() >= 10000 && order.getType().contains("음료")){
             manageBenefits.setWeekdayDiscount(calculateWeekday(order));
