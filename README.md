@@ -73,10 +73,5 @@
 ### 3) makeMenuAndQuantity
 - 메뉴이름, 수량 동시에 만들기
 
-### 4) makePrice
-- 가격 만들기
-
-### 5) makeType
-- 메뉴 타입 만들기
 
 
