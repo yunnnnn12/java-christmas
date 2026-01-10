@@ -72,7 +72,6 @@ public class OutputView {
         System.out.println();
     }
 
-    //총 혜택 금액에 따라 부여
     public void returnBadge(ManageBenefits benefits){
         CheckBenefitsService checkBenefitsService = new CheckBenefitsService();
         System.out.println("<12월 이벤트 배지>");
