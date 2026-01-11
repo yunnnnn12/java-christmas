@@ -7,6 +7,5 @@ public class DateInputValidator {
         }
         return Integer.parseInt(input);
     }
-
 }
 
