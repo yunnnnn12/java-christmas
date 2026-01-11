@@ -59,7 +59,7 @@
 - 12월 이벤트 배지
 
 ## 3. service
-### 1) CheckBenefitService
+### 1) checkBenefitService
 - 평일/주말 할인 계산
 - 특별 할인 계산
 - 크리스마스 디데이할인 계산
